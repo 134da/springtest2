@@ -1,0 +1,15 @@
+package springtest2.config;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import springtest.anno.MyMapperScan;
+
+/**
+ * @author 134da
+ */
+@Configuration  //标志当前类是一个配置类 + @Component
+@ComponentScan("springtest2")   //扫描范围
+public class SpringConfig {
+}
