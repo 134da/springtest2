@@ -1,4 +1,4 @@
-package springtest2;
+package springtest2.test;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import springtest2.config.SpringConfig;
@@ -10,8 +10,10 @@ public class ApplicationContextTest {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContextTest = new AnnotationConfigApplicationContext(SpringConfig.class);
         UserService bean = applicationContextTest.getBean(UserService.class);
+        bean.show1();
         bean.show2();
         UserDao bean1 = applicationContextTest.getBean(UserDao.class);
         bean1.show();
+        bean1.show1();
     }
 }

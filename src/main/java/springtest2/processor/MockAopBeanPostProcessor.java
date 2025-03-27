@@ -9,7 +9,7 @@ import springtest2.advice.MyAdvice;
 
 import java.lang.reflect.Proxy;
 
-@Component
+//@Component
 public class MockAopBeanPostProcessor implements BeanPostProcessor, ApplicationContextAware {
 
     private ApplicationContext applicationContext;
